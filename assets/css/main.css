@@ -10,6 +10,8 @@ header {
     justify-content: space-between;
     background-color: gray;
     align-items: center;
+    top: 0;
+    position: sticky;
 }
 
 header h1 {
