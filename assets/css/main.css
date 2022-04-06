@@ -2,3 +2,20 @@ body * {
     margin: 0;
     padding: 0;
 }
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    align-items: center;
+}
+
+header h1 {
+    margin: 1em;
+}
+
+header button {
+    height: 25px;
+}
