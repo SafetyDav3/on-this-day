@@ -12,3 +12,7 @@
 ## Resources
 
 * Materialize - https://materializecss.com/
+
+* MuffinLabs - https://github.com/muffinista/really-simple-history-api
+
+* NASA APOD - https://github.com/nasa/apod-api
