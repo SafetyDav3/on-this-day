@@ -5,7 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
-
+body {
+  background-color: #444;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
