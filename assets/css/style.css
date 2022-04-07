@@ -56,4 +56,13 @@ p {
 
 footer.page-footer {
   margin: 0;
+  width: auto;
+}
+
+.exit {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(199, 198, 198);
+  text-align: center;
+
 }
