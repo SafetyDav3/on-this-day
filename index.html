@@ -3,8 +3,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>On This Day</title>
-
+    <title>Parallax Template - Materialize</title>
+    
     <!-- CSS  -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -14,45 +14,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
-      integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"/>
-    <!--favicon-->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
 
   <body>
-    <header>
-      <!-- Dropdown Structure -->
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!">four</a></li>
-        <li><a href="#!">five</a></li>
-      </ul>
-      <nav id="logo-container">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
-          <ul class="right">
-            <!-- Dropdown Trigger -->
-            <li>
-              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-                >Dropdown<i class="material-icons right">arrow_drop_down</i></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <img src="/assets/images/evolve.jpg" alt="human evolution" class="brand-logo">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Your Search History</a></li>
+        </ul>
 
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
@@ -66,12 +45,7 @@
           </div>
           <div class="row center">
             <input type="text" id="date-picker" />
-            <button
-              type="submit"
-              class="btn-large waves-effect waves-light teal lighten-1"
-            >
-              Get Date Info
-            </button>
+            <button type="submit" class="btn-large waves-effect waves-light teal lighten-1">Get Date Info</button>
             <a
               href="http://materializecss.com/getting-started.html"
               id="download-button"
@@ -123,22 +97,14 @@
       </div>
     </div>
 
-    <footer class="page-footer teal"></footer>
+    <footer class="page-footer teal">
+      <h2 class="exit">&copy; 2022 Andrew Brian Carrie David</h2>
+    </footer>
 
     <!--  Scripts-->
     <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
