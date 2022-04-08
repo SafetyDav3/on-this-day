@@ -14,8 +14,13 @@ nav .brand-logo {
   color: #444;
 }
 
+h1 {
+  text-shadow: 5px 5px 0 #15625a;
+}
+
 p {
   line-height: 2rem;
+  
 }
 
 .sidenav-trigger {
