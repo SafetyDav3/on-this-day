@@ -1,12 +1,6 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   var elems = document.querySelectorAll(".dropdown-trigger");
-//   var instances = M.Dropdown.init(elems, options);
-// });
-
-
 //api call for event, birth and death data
 var getDateData = function(month, day) {
-  fetch(`https://history.muffinlabs.com/date/${month}/${day}`)
+  fetch(`https://octoproxymus.herokuapp.com?secret=walrus&url=${encodeURIComponent(`https://today.zenquotes.io/api/${month}/${day}`)}`)
   .then(function(response) {
       console.log(response)
       return response.json()
