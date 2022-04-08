@@ -1,3 +1,9 @@
+$('#date-picker').datepicker({
+  changeMonth: true,
+  showButtonPanel: true,
+  format: 'mm-dd'
+})
+
 //api call for event, birth and death data
 var getDateData = function (month, day) {
   fetch(

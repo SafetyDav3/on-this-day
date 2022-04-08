@@ -49,6 +49,20 @@ header h1 {
 }
 
 @media only screen and (max-width: 992px) {
+  .year-text {
+    display: none !important;
+  }
+
+  .select-wrapper.select-year {
+    display: none;
+  }
+
+  tbody {
+    color: black;
+  }
+}
+
+@media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
