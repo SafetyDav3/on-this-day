@@ -31,6 +31,18 @@ p {
     width: 100%;
   }
 
+  .year-text {
+    display: none !important;
+  }
+
+  .select-wrapper.select-year {
+    display: none;
+  }
+
+  tbody {
+    color: black;
+  }
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
