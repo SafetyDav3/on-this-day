@@ -9,6 +9,7 @@ body {
   background-color: #444;
   font-family: 'Bungee', cursive;
 }
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -23,6 +24,21 @@ p {
 
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-image: linear-gradient(black, gray);
+  box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4);
+}
+header h1 {
+  font-weight: bold;
+  /* text-shadow: 0 4px 6px 3px rgba(0, 0, 0, .4);
+  margin: 0;
+  padding: 0; */
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }
@@ -31,23 +47,39 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .year-text {
+    display: none !important;
   }
+
+  .select-wrapper.select-year {
+    display: none;
+  }
+
+  tbody {
+    color: black;
+  }
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -56,10 +88,16 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
 
 footer.page-footer {
   margin: 0;
+}
+
+.white {
+  width: 100vw;
+  background: black;
 }

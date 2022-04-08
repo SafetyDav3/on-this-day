@@ -16,6 +16,7 @@
       rel="stylesheet"
       media="screen,projection"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,15 +26,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
   </head>
+
   <body>
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <img id="logo-container" class="brand-logo" src="/assets/images/evolve.jpg" alt="evolution">
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Your Search History</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <a href="#" id="logo-container" class="brand-logo"><h1>Logo</h1></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Your search history</a></li>
+      </ul>
+    </header>
 
     <div id="index-banner" class="parallax-container">
       <div class="section no-pad-bot">
@@ -46,6 +46,8 @@
             <h5 class="header col s12 light">What Happened? Lets Find Out!</h5>
           </div>
           <div class="row center">
+            <input type="text" id="date-picker" />
+            <button type="submit" class="btn-large waves-effect waves-light teal lighten-1">Get Date Info</button>
             <a
               href="http://materializecss.com/getting-started.html"
               id="download-button"
@@ -102,7 +104,9 @@
     <footer class="page-footer teal"></footer>
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
