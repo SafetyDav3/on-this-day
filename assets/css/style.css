@@ -7,7 +7,6 @@
  */
 body {
   background-color: #444;
-  font-family: 'Bungee', cursive;
 }
 
 nav ul a,
@@ -15,13 +14,8 @@ nav .brand-logo {
   color: #444;
 }
 
-h1 {
-  text-shadow: 5px 5px 0 #15625a;
-}
-
 p {
   line-height: 2rem;
-
 }
 
 header {
@@ -34,9 +28,6 @@ header {
 }
 header h1 {
   font-weight: bold;
-  /* text-shadow: 0 4px 6px 3px rgba(0, 0, 0, .4);
-  margin: 0;
-  padding: 0; */
 }
 
 .parallax-container {
@@ -64,7 +55,7 @@ header h1 {
   }
 }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
