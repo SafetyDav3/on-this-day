@@ -1,8 +1,8 @@
-$('#date-picker').datepicker({
+$("#date-picker").datepicker({
   changeMonth: true,
   showButtonPanel: true,
-  format: 'mm-dd'
-})
+  format: "mm-dd",
+});
 
 //api call for event, birth and death data
 var getDateData = function (month, day) {
@@ -38,4 +38,5 @@ var getNasaData = function () {
     });
 };
 
+$(".dropdown-trigger").dropdown({ hover: false });
 getNasaData();
