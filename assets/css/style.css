@@ -9,25 +9,17 @@ body {
   background-color: #444;
 }
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+header nav, .dropdown-content {
+  background-color: black;
+  padding: 10px;
+}
+
+nav .brand-logo, .dropdown-trigger, .right {
+  color: #26A69A;
 }
 
 p {
   line-height: 2rem;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  background-image: linear-gradient(black, gray);
-  box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.4);
-}
-header h1 {
-  font-weight: bold;
 }
 
 .parallax-container {
