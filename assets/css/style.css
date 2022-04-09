@@ -79,3 +79,8 @@ footer.page-footer {
   width: 100vw;
   background: black;
 }
+
+
+.nasaPic img {
+  /* background-size: cover; */
+}
