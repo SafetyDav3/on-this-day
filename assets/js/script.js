@@ -1,8 +1,74 @@
+//global variables
+var paraContainer = document.querySelector(".parallax-container")
+var eventsEl = document.getElementById("hist-events")
+var birthsEl = document.getElementById("famous-births")
+var deathsEl = document.getElementById("famous-deaths")
+var dateEl = document.getElementById("date-picker")
+var dateForm = document.getElementById("date-form")
+
 $("#date-picker").datepicker({
   changeMonth: true,
   showButtonPanel: true,
   format: "mm-dd",
 });
+
+//function that sorts arrays to a random order
+var randomizeArray = function(array) {
+  var randomizedArr = array
+  for(let i = randomizedArr.length-1; i > 0; i--){
+    const j = Math.floor(Math.random() * i)
+    const temp = randomizedArr[i]
+    randomizedArr[i] = randomizedArr[j]
+    randomizedArr[j] = temp
+  }
+  return randomizedArr
+}
+
+//displays NASA pic/link and desc
+var displayNasaData = function(nasaData) {
+  var nasaEl = document.querySelector(".nasaPic")
+  nasaEl.remove()
+  var newNasaEl = document.createElement('div')
+  newNasaEl.setAttribute('class', 'nasaPic')
+  var nasaUrl = nasaData.url.substr(8, 13)
+  if (nasaUrl == "apod.nasa.gov") {
+    var nasaImage = document.createElement('img')
+    nasaImage.setAttribute("src", nasaData.url)
+    newNasaEl.appendChild(nasaImage)
+  }
+  else {
+    var nasaLink = document.createElement('a')
+    nasaLink.setAttribute("href", nasaData.url)
+    nasaLink.setAttribute("target", "_blank")
+    nasaLink.innerText = "NASA Link"
+    newNasaEl.appendChild(nasaLink)
+  }
+  var nasaDesc = document.createElement('p')
+  nasaDesc.innerText = nasaData.explanation
+  newNasaEl.appendChild(nasaDesc)
+  paraContainer.appendChild(newNasaEl)
+}
+
+//displays event, birth and death data
+var displayDateData = function(dateData) {
+  eventsEl.innerHTML = ""
+  birthsEl.innerHTML = ""
+  deathsEl.innerHTML = ""
+  var eventsArr = randomizeArray(dateData.data.Events)
+  var birthsArr = randomizeArray(dateData.data.Births)
+  var deathsArr = randomizeArray(dateData.data.Deaths)
+  for (let i = 0; i < 5; i++) {
+    let newEvent = document.createElement("div")
+    let newBirth = document.createElement("div")
+    let newDeath = document.createElement("div")
+    newEvent.innerHTML = eventsArr[i].html
+    newBirth.innerHTML = birthsArr[i].html
+    newDeath.innerHTML = deathsArr[i].html
+    eventsEl.appendChild(newEvent)
+    birthsEl.appendChild(newBirth)
+    deathsEl.appendChild(newDeath)
+  }
+}
 
 //api call for event, birth and death data
 var getDateData = function (month, day) {
@@ -17,14 +83,16 @@ var getDateData = function (month, day) {
     })
     .then(function (dateData) {
       console.log(dateData);
+      displayDateData(dateData);
     });
 };
 
 //api call for APOD for specific date from NASA api
-var getNasaData = function () {
-  var selectedMonth = 10;
-  var selectedDay = 06;
-  console.log(selectedMonth, selectedDay);
+var getNasaData = function (event) {
+  event.preventDefault()
+  var dateString = dateEl.value
+  var selectedMonth = dateString.substr(0, 2)
+  var selectedDay = dateString.substr(3, 2)
   fetch(
     `https://api.nasa.gov/planetary/apod?date=2021-${selectedMonth}-${selectedDay}&api_key=3Jkz68futt7JqR6rwvf60CmRxO3fHkW5mgA7NQSK`
   )
@@ -34,12 +102,13 @@ var getNasaData = function () {
     })
     .then(function (nasaData) {
       console.log(nasaData);
+      displayNasaData(nasaData)
       getDateData(selectedMonth, selectedDay);
     });
 };
 
 $(".dropdown-trigger").dropdown({ hover: false });
-getNasaData();
+dateForm.addEventListener('submit', getNasaData)
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
