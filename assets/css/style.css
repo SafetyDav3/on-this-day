@@ -17,6 +17,9 @@ header nav,
   /* padding: 10px; */
 }
 
+.brand-logo {
+  margin: 15px;
+}
 nav .brand-logo,
 .dropdown-trigger,
 .right {
@@ -87,6 +90,7 @@ footer.page-footer {
 .card {
   width: 33vw;
   margin: auto;
+  box-shadow: 0 8px 12px 5px rgba(0, 0, 0, 0.9);
   /* height: 50vh; */
 }
 
@@ -101,3 +105,4 @@ footer.page-footer {
   margin: 0;
   margin-right: 0;
 }
+
