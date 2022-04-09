@@ -5,18 +5,22 @@
  *
  * Made By MaterializeCSS.com
  */
+
 body {
   background-color: #444;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
-header nav, .dropdown-content {
+header nav,
+.dropdown-content {
   background-color: black;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
-nav .brand-logo, .dropdown-trigger, .right {
-  color: #26A69A;
+nav .brand-logo,
+.dropdown-trigger,
+.right {
+  color: #26a69a;
 }
 
 p {
@@ -35,15 +39,15 @@ p {
 }
 
 .year-text {
-    display: none !important;
+  display: none !important;
 }
 
 .select-wrapper.select-year {
-    display: none;
+  display: none;
 }
 
- tbody {
-    color: black;
+tbody {
+  color: black;
 }
 
 @media only screen and (max-width: 992px) {
@@ -80,7 +84,20 @@ footer.page-footer {
   background: black;
 }
 
+.card {
+  width: 33vw;
+  margin: auto;
+  /* height: 50vh; */
+}
 
-.nasaPic img {
-  /* background-size: cover; */
+.parallax-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-right: 0;
 }
