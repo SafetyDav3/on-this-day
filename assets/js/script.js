@@ -22,9 +22,8 @@ var getSavedDateData = function(event) {
   getNasaData(selectedMonth, selectedDay)
 }
 
-//function to save date as a button in dropdown and in local storage
-var saveDate = function(event) {
-  var dateString = dateEl.value
+//function to generate button for saved dates
+var generateSavedDateBtn = function(dateString) {
   var newListItem = document.createElement("li")
   var newDateBtn = document.createElement("button")
   newDateBtn.setAttribute("type", "button")
@@ -33,6 +32,24 @@ var saveDate = function(event) {
   newDateBtn.addEventListener("click", getSavedDateData)
   newListItem.appendChild(newDateBtn)
   savedDatesList.appendChild(newListItem)
+}
+
+//function to load saved dates on page load
+var loadDates = function() {
+  var loadedDates = localStorage.getItem("SavedDates")
+  if (!loadedDates) {
+    return
+  }
+  loadedDates = JSON.parse(loadedDates)
+  for (var i = 0; i < loadedDates.length; i++) {
+      generateSavedDateBtn(loadedDates[i])
+  }
+}
+
+//function to save date as a button in dropdown and in local storage
+var saveDate = function(event) {
+  var dateString = dateEl.value
+  generateSavedDateBtn(dateString)
   var savedDates = localStorage.getItem("SavedDates")
   if (!savedDates) {
     localStorage.setItem("SavedDates", JSON.stringify([dateString]))
@@ -150,6 +167,9 @@ $(".dropdown-trigger").dropdown({ hover: false });
 //event listeners for getting date info and saving date info
 dateForm.addEventListener('submit', dateSubmitHandler)
 saveDateBtn.addEventListener("click", saveDate)
+
+//function call to load saved dates
+loadDates()
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
