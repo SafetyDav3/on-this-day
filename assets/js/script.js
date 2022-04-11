@@ -5,12 +5,43 @@ var birthsEl = document.getElementById("famous-births")
 var deathsEl = document.getElementById("famous-deaths")
 var dateEl = document.getElementById("date-picker")
 var dateForm = document.getElementById("date-form")
+var saveDateBtn = document.getElementById("save-date-btn")
+var savedDatesList = document.getElementById("saved-dates")
 
 $("#date-picker").datepicker({
   changeMonth: true,
   showButtonPanel: true,
   format: "mm-dd",
 });
+
+//click handler for saved date
+var getSavedDateData = function(event) {
+  var dateString = event.target.innerText
+  var selectedMonth = dateString.substr(0, 2)
+  var selectedDay = dateString.substr(3, 2)
+  getNasaData(selectedMonth, selectedDay)
+}
+
+//function to save date as a button in dropdown and in local storage
+var saveDate = function(event) {
+  var dateString = dateEl.value
+  var newListItem = document.createElement("li")
+  var newDateBtn = document.createElement("button")
+  newDateBtn.setAttribute("type", "button")
+  newDateBtn.setAttribute("class", "btn-large waves-effect waves-light teal lighten-1")
+  newDateBtn.innerText = dateString
+  newDateBtn.addEventListener("click", getSavedDateData)
+  newListItem.appendChild(newDateBtn)
+  savedDatesList.appendChild(newListItem)
+  var savedDates = localStorage.getItem("SavedDates")
+  if (!savedDates) {
+    localStorage.setItem("SavedDates", JSON.stringify([dateString]))
+    return
+  }
+  savedDates = JSON.parse(savedDates)
+  savedDates.push(dateString)
+  localStorage.setItem("SavedDates", JSON.stringify(savedDates))
+}
 
 //function that sorts arrays to a random order
 var randomizeArray = function(array) {
@@ -88,11 +119,7 @@ var getDateData = function (month, day) {
 };
 
 //api call for APOD for specific date from NASA api
-var getNasaData = function (event) {
-  event.preventDefault()
-  var dateString = dateEl.value
-  var selectedMonth = dateString.substr(0, 2)
-  var selectedDay = dateString.substr(3, 2)
+var getNasaData = function (selectedMonth, selectedDay) {
   fetch(
     `https://api.nasa.gov/planetary/apod?date=2021-${selectedMonth}-${selectedDay}&api_key=3Jkz68futt7JqR6rwvf60CmRxO3fHkW5mgA7NQSK`
   )
@@ -107,8 +134,22 @@ var getNasaData = function (event) {
     });
 };
 
+var dateSubmitHandler = function(event) {
+  event.preventDefault()
+  var dateString = dateEl.value
+  if (!dateString) {
+    return
+  }
+  var selectedMonth = dateString.substr(0, 2)
+  var selectedDay = dateString.substr(3, 2)
+  getNasaData(selectedMonth, selectedDay)
+}
+
 $(".dropdown-trigger").dropdown({ hover: false });
-dateForm.addEventListener('submit', getNasaData)
+
+//event listeners for getting date info and saving date info
+dateForm.addEventListener('submit', dateSubmitHandler)
+saveDateBtn.addEventListener("click", saveDate)
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
