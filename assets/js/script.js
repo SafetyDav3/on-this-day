@@ -112,9 +112,18 @@ var displayDateData = function(dateData) {
     newEvent.innerHTML = eventsArr[i].html
     newBirth.innerHTML = birthsArr[i].html
     newDeath.innerHTML = deathsArr[i].html
+    insertTarget(newEvent.querySelectorAll("a"))
+    insertTarget(newBirth.querySelectorAll("a"))
+    insertTarget(newDeath.querySelectorAll("a"))
     eventsEl.appendChild(newEvent)
     birthsEl.appendChild(newBirth)
     deathsEl.appendChild(newDeath)
+  }
+}
+
+var insertTarget = function(nodeList) {
+  for (var i = 0; i < nodeList.length; i++) {
+    nodeList[i].setAttribute("target", "_blank")
   }
 }
 
