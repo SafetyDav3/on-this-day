@@ -12,7 +12,6 @@ body {
 
 body img {
   display: flex;
-
   max-width: 30%;
   max-height: 90%;
 }
@@ -26,6 +25,9 @@ nav .brand-logo, .dropdown-trigger, .right {
   color: black;
 }
 
+button {
+  font-family: 'Bungee', cursive;
+}
 
 h1 {
   text-shadow:5px 5px 0px #17756b;
@@ -39,6 +41,7 @@ p {
   line-height: 0;
   height: auto;
   color: rgba(255, 255, 255, 0.9);
+  margin:auto;
 }
 
 .parallax-container .section {
@@ -55,6 +58,28 @@ p {
 
 tbody {
     color: black;
+}
+
+#date-picker {
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white; 
+}
+
+ul li button {
+  width: 100%;
+}
+
+.nasaPic {
+  margin: 2rem 2rem;
+}
+
+.nasaPic img {
+  margin:auto;
 }
 
 @media only screen and (max-width: 992px) {
@@ -114,7 +139,7 @@ footer.page-footer {
   background-color: #555; 
 }
 
-.white {
+nav {
   width: 100vw;
   background: black;
 }
