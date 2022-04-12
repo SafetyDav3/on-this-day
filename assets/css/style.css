@@ -1,4 +1,4 @@
-/* Custom Stylesheet */
+/* Custom Style-sheet */
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -7,41 +7,93 @@
  */
 body {
   background-color: #444;
-}
-nav ul a,
-nav .brand-logo {
-  color: #444;
+  font-family: 'Bungee', cursive;
 }
 
+body img {
+  display: flex;
+  max-width: 30%;
+  max-height: 90%;
+}
+
+header nav, .dropdown-content {
+  background-color: black;
+  padding: 10px;
+}
+
+nav .brand-logo, .dropdown-trigger, .right {
+  color: white;
+}
+
+button {
+  font-family: 'Bungee', cursive;
+}
+
+h1 {
+  text-shadow:5px 5px 0px #17756b;
+}
 p {
   line-height: 2rem;
-}
-
-.sidenav-trigger {
-  color: #26a69a;
 }
 
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
+  margin:auto;
 }
-  .parallax-container .section {
-    width: 100%;
-  }
 
-@media only screen and (max-width : 992px) {
+.parallax-container .section {
+  width: 100%;
+}
+
+.year-text {
+    display: none !important;
+}
+
+.select-wrapper.select-year {
+    display: none;
+}
+
+tbody {
+    color: black;
+}
+
+#date-picker {
+  width: 300px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white; 
+}
+
+ul li button {
+  width: 100%;
+}
+
+.nasaPic {
+  margin: 2rem 2rem;
+}
+
+.nasaPic img {
+  margin:auto;
+}
+
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
+
   #index-banner .section {
     top: 10%;
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -50,10 +102,44 @@ p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
 
 footer.page-footer {
   margin: 0;
+  width: auto;
+}
+
+.exit {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(199, 198, 198);
+  text-align: center;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 3px #156a62 solid;; 
+  outline: none; 
+  background-color: #26A69A; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+nav {
+  width: 100vw;
+  background: black;
 }

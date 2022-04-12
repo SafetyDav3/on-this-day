@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Parallax Template - Materialize</title>
 
-    <!-- CSS  -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="./assets/css/materialize.css"
-      type="text/css"
-      rel="stylesheet"
-      media="screen,projection"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <nav class="white" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Your Search History</a></li>
-        </ul>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parallax Template - Materialize</title>
 
-    <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br /><br />
-          <h1 class="header center teal-text text-lighten-2">
-            This Day In History
-          </h1>
-          <div class="row center">
-            <h5 class="header col s12 light">What Happened? Lets Find Out!</h5>
-          </div>
-          <div class="row center">
-            <a
-              href="http://materializecss.com/getting-started.html"
-              id="download-button"
-              class="btn-large waves-effect waves-light teal lighten-1"
-              >Get Started</a
-            >
-          </div>
-          <br /><br />
-        </div>
-      </div>
-      <div class="nasaPic"><img src="" alt="" /></div>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img src="./assets/images/evolve.jpg" alt="human evolution" class="brand-logo">
+      <a class='dropdown-trigger btn-large waves-effect waves-light teal lighten-1 right' href='#' data-target='saved-dates'>Saved Dates</a>
+      <ul id="saved-dates" class="right dropdown-content">
+      </ul>
     </div>
+  </nav>
+  
 
-    <div class="container">
-      <div class="section">
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text">
-                <i class="material-icons">flash_on</i>
-              </h2>
-              <h5 class="center">Historical Events</h5>
-
-              <p class="light">Push Here.</p>
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br /><br />
+            <h1 class="header center teal-text text-lighten-2">
+              This Day In History
+            </h1>
+            <div class="row center">
+              <h5 class="header col s12 light">What Happened? Lets Find Out!</h5>
             </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text">
-                <i class="material-icons">group</i>
-              </h2>
-              <h5 class="center">Famous Birthdays</h5>
-
-              <p class="light">Push Here</p>
+            <div class="row center">
+              <form id="date-form">
+                <input type="text" id="date-picker" placeholder="Choose a Date" />
+                <button type="submit" class="btn-large waves-effect waves-light teal lighten-1">Get Date Info</button>
+              </form>
+              <button id="save-date-btn"type="button" class="btn-large waves-effect waves-light teal lighten-1">Save Date</button>
             </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center brown-text">
-                <i class="material-icons">settings</i>
-              </h2>
-              <h5 class="center">Famous Deaths</h5>
-
-              <p class="light">Push Here</p>
-            </div>
+            <br /><br />
           </div>
         </div>
+        <div class="nasaPic container"></div>
       </div>
-    </div>
 
-    <footer class="page-footer teal"></footer>
+      <div class="container">
+        <div class="section">
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text">
+                  <i class="material-icons">update</i>
+                </h2>
+                <h5 class="center">Historical Events</h5>
+                <p id="hist-events" class="light">Push Here.</p>
+              </div>
+            </div>
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text">
+                  <i class="material-icons">cake</i>
+                </h2>
+                <h5 class="center">Famous Birthdays</h5>
+                <p id="famous-births" class="light">Push Here</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center brown-text">
+                  <i class="material-icons">airline_seat_flat</i>
+                </h2>
+                <h5 class="center">Famous Deaths</h5>
+
+                <p id="famous-deaths" class="light">Push Here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer teal">
+        <h2 class="exit">&copy; 2022 Andrew Brian Carrie David</h2>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </footer>
+
+      <!--  Scripts-->
+      <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="assets/js/materialize.min.js"></script>
+      <script src="assets/js/script.js"></script>
+</body>
+
 </html>
