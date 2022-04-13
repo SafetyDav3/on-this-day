@@ -5,9 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
- body {
+body {
   background-color: #444;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   min-height: 100vh;
   background-image: url(../images/stars3.webp) !important;
   background-position: center;
@@ -21,23 +21,40 @@ body img {
   max-height: 90%;
 }
 
-
 #drop-btn {
   background-color: transparent !important;
- 
 }
 
-header nav, .dropdown-content {
+header nav,
+.dropdown-content {
   background-color: black;
   padding: 10px;
 }
 
 .white {
   justify-content: baseline;
-  background-image: linear-gradient(to bottom right, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
+  background-image: linear-gradient(
+    to bottom right,
+    #000908,
+    #042522,
+    #06453e,
+    #0e5b54,
+    #0f756b,
+    #198277,
+    #26a69a,
+    #022420,
+    #052d29,
+    #06453e,
+    #0e5b54,
+    #0f756b,
+    #198277,
+    #26a69a
+  );
 }
 
-nav .brand-logo, .dropdown-trigger, .right {
+nav .brand-logo,
+.dropdown-trigger,
+.right {
   color: white;
 }
 
@@ -46,7 +63,7 @@ nav .brand-logo {
 }
 
 button {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   margin-top: 0.4rem;
 }
 
@@ -113,7 +130,6 @@ ul li button {
   margin: auto;
 }
 
-
 .icon-block {
   padding: 0 15px;
 }
@@ -126,7 +142,23 @@ footer.page-footer {
   padding-bottom: 10px;
   margin-top: 40px;
   width: 100vw;
-  background-image: linear-gradient(to bottom left, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
+  background-image: linear-gradient(
+    to bottom left,
+    #000908,
+    #042522,
+    #06453e,
+    #0e5b54,
+    #0f756b,
+    #198277,
+    #26a69a,
+    #022420,
+    #052d29,
+    #06453e,
+    #0e5b54,
+    #0f756b,
+    #198277,
+    #26a69a
+  );
   position: absolute;
   bottom: 0;
 }
@@ -163,5 +195,12 @@ nav {
   background: black;
 }
 
+#saved-dates {
+  background: none;
+  /* border: 1px solid red; */
+}
 
-  
+#saved-dates li {
+  position: relative;
+  left: 6px;
+}
