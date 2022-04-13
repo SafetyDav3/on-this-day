@@ -51,7 +51,7 @@ var loadDates = function () {
 };
 
 var animateSavedDates = function() {
-  $("#drop-btn").effect("shake")
+  $("#drop-btn").effect("shake", 600)
 };
 
 //function to save date as a button in dropdown and in local storage
@@ -70,6 +70,7 @@ var saveDate = function (event) {
   savedDates = JSON.parse(savedDates);
   for (var i = 0; i < savedDates.length; i++) {
     if (dateString == savedDates[i]) {
+        animateSavedDates();
         return;
       }
   }
