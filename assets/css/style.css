@@ -82,6 +82,7 @@ ul li button {
   margin:auto;
 }
 
+
 .icon-block {
   padding: 0 15px;
 }
@@ -91,8 +92,10 @@ ul li button {
 }
 
 footer.page-footer {
+  display: flex;
   margin: 0;
   width: auto;
+  padding-bottom: 20px;
 }
 
 .exit {
@@ -126,3 +129,4 @@ nav {
   width: 100vw;
   background: black;
 }
+
