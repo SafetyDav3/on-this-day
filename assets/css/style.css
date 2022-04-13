@@ -28,7 +28,6 @@ header nav, .dropdown-content {
 
 nav .brand-logo, .dropdown-trigger, .right {
   color: white;
-  background-image: linear-gradient(to bottom right, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
 }
 
 button {
@@ -109,6 +108,7 @@ footer.page-footer {
   padding: 20px;
   margin: 0;
   width: 100vw;
+  background-image: linear-gradient(to bottom left, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
 }
 
 .exit {
@@ -143,4 +143,9 @@ nav {
   background: black;
 }
 
-
+@media (max-width: 930px){
+  nav .brand-logo {
+    left: 20%;
+}
+} 
+  
