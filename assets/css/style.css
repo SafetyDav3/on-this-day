@@ -38,6 +38,7 @@ button {
 h1 {
   text-shadow:5px 5px 0px #17756b;
 }
+
 p {
   line-height: 2rem;
 }
@@ -60,6 +61,11 @@ p {
 
 .select-wrapper.select-year {
     display: none;
+}
+
+.select-dropdown {
+  color: black;
+  font-family: 'Bungee', cursive;
 }
 
 tbody {
@@ -98,10 +104,11 @@ ul li button {
 }
 
 footer.page-footer {
-  display: flex;
+  position: relative;
+  bottom: 0;
+  padding: 20px;
   margin: 0;
-  width: auto;
-  padding-bottom: 20px;
+  width: 100vw;
 }
 
 .exit {
