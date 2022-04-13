@@ -9,12 +9,22 @@
   background-color: #444;
   font-family: 'Bungee', cursive;
   min-height: 100vh;
+  background-image: url(../images/stars3.webp) !important;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
 }
 
 body img {
   display: flex;
   max-width: 30%;
   max-height: 90%;
+}
+
+
+#drop-btn {
+  background-color: transparent !important;
+ 
 }
 
 header nav, .dropdown-content {
@@ -37,10 +47,15 @@ nav .brand-logo {
 
 button {
   font-family: 'Bungee', cursive;
+  margin-top: 0.4rem;
 }
 
 h1 {
   text-shadow:5px 5px 0px #17756b;
+}
+
+.material-icons {
+  color: #17756b;
 }
 
 p {
@@ -108,10 +123,8 @@ ul li button {
 }
 
 footer.page-footer {
-  position: relative;
-  bottom: 0;
-  padding: 20px;
-  margin-top: 75px;
+  padding-bottom: 10px;
+  margin-top: 40px;
   width: 100vw;
   background-image: linear-gradient(to bottom left, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
 }
