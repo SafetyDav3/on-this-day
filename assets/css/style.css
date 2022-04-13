@@ -7,7 +7,7 @@
  */
 body {
   background-color: #444;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 body img {
@@ -16,21 +16,24 @@ body img {
   max-height: 90%;
 }
 
-header nav, .dropdown-content {
+header nav,
+.dropdown-content {
   background-color: black;
   padding: 10px;
 }
 
-nav .brand-logo, .dropdown-trigger, .right {
+nav .brand-logo,
+.dropdown-trigger,
+.right {
   color: white;
 }
 
 button {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 h1 {
-  text-shadow:5px 5px 0px #17756b;
+  text-shadow: 5px 5px 0px #17756b;
 }
 
 p {
@@ -42,7 +45,7 @@ p {
   line-height: 0;
   height: auto;
   color: rgba(255, 255, 255, 0.9);
-  margin:auto;
+  margin: auto;
 }
 
 .parallax-container .section {
@@ -50,20 +53,20 @@ p {
 }
 
 .year-text {
-    display: none !important;
+  display: none !important;
 }
 
 .select-wrapper.select-year {
-    display: none;
+  display: none;
 }
 
 .select-dropdown {
   color: black;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
 }
 
 tbody {
-    color: black;
+  color: black;
 }
 
 #date-picker {
@@ -73,7 +76,7 @@ tbody {
   margin: auto;
   font-weight: bold;
   font-size: 2rem;
-  color: white; 
+  color: white;
 }
 
 ul li button {
@@ -85,7 +88,7 @@ ul li button {
 }
 
 .nasaPic img {
-  margin:auto;
+  margin: auto;
 }
 
 .icon-block {
@@ -112,14 +115,14 @@ footer.page-footer {
 }
 
 #myBtn {
-  display: none; 
-  position: fixed; 
+  display: none;
+  position: fixed;
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: 3px #156a62 solid;; 
-  outline: none; 
-  background-color: #26A69A; /* Set a background color */
+  border: 3px #156a62 solid;
+  outline: none;
+  background-color: #26a69a; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -128,7 +131,7 @@ footer.page-footer {
 }
 
 #myBtn:hover {
-  background-color: #555; 
+  background-color: #555;
 }
 
 nav {
