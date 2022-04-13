@@ -49,6 +49,9 @@ var loadDates = function() {
 //function to save date as a button in dropdown and in local storage
 var saveDate = function(event) {
   var dateString = dateEl.value
+  if (!dateString) {
+    return
+  }
   generateSavedDateBtn(dateString)
   var savedDates = localStorage.getItem("SavedDates")
   if (!savedDates) {
