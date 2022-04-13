@@ -127,7 +127,13 @@ ul li button {
 }
 
 .nasaPic img {
+  border: 3px outset #26a69a ;
+  box-shadow: 3px 0px 8px 4px black;
   margin: auto;
+}
+
+.nasaPic p {
+  text-shadow: 5px 6px 4px black;
 }
 
 .icon-block {
@@ -204,3 +210,29 @@ nav {
   position: relative;
   left: 6px;
 }
+
+
+.icon-block p {
+  color: white ;
+  text-shadow: 5px 6px 4px black;
+
+}
+.icon-block h5 {
+  color: white;
+}
+
+.icon-block a {
+  color: wheat;
+}
+.container h5 {
+  text-shadow: 5px 6px 6px black;
+  font-size: 3rem;
+}
+
+.material-icons {
+  font-size: 2em !important;
+  filter: drop-shadow(2px 4px 2px black);
+
+  color: #19d3c0;
+}
+
