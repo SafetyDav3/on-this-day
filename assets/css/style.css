@@ -7,16 +7,12 @@
  */
  body {
   background-color: #444;
-<<<<<<< HEAD
-  font-family: "Bungee", cursive;
-=======
   font-family: 'Bungee', cursive;
   min-height: 100vh;
   background-image: url(../images/stars3.webp) !important;
   background-position: center;
   background-repeat: none;
   background-size: cover;
->>>>>>> eea65ed2f4db8ae3958370f0368af12b52ed6166
 }
 
 body img {
@@ -25,10 +21,6 @@ body img {
   max-height: 90%;
 }
 
-<<<<<<< HEAD
-header nav,
-.dropdown-content {
-=======
 
 #drop-btn {
   background-color: transparent !important;
@@ -36,7 +28,6 @@ header nav,
 }
 
 header nav, .dropdown-content {
->>>>>>> eea65ed2f4db8ae3958370f0368af12b52ed6166
   background-color: black;
   padding: 10px;
 }
@@ -55,12 +46,8 @@ nav .brand-logo {
 }
 
 button {
-<<<<<<< HEAD
-  font-family: "Bungee", cursive;
-=======
   font-family: 'Bungee', cursive;
   margin-top: 0.4rem;
->>>>>>> eea65ed2f4db8ae3958370f0368af12b52ed6166
 }
 
 h1 {
