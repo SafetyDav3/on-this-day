@@ -169,6 +169,11 @@ footer.page-footer {
   bottom: 0;
 }
 
+footer h2 {
+  color: white !important;
+  text-shadow: 5px 6px 4px black;
+}
+
 .exit {
   font-size: 15px;
   font-weight: bold;
