@@ -8,6 +8,7 @@
  body {
   background-color: #444;
   font-family: 'Bungee', cursive;
+  min-height: 100vh;
 }
 
 body img {
@@ -110,7 +111,7 @@ footer.page-footer {
   position: relative;
   bottom: 0;
   padding: 20px;
-  margin: 0;
+  margin-top: 75px;
   width: 100vw;
   background-image: linear-gradient(to bottom left, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
 }
