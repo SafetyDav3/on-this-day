@@ -12,6 +12,7 @@ $("#date-picker").datepicker({
   changeMonth: true,
   showButtonPanel: true,
   format: "mm-dd",
+  monthNames: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
 });
 
 //click handler for saved date
@@ -174,10 +175,12 @@ var dateSubmitHandler = function(event) {
   if (!dateString) {
     return
   }
-  var selectedMonth = dateString.substr(0, 2)
-  var selectedDay = dateString.substr(3, 2)
-  getNasaData(selectedMonth, selectedDay)
-}
+  var selectedMonth = dateString.substr(0, 2);
+  var selectedDay = dateString.substr(3, 2);
+  var footer = document.querySelector(".page-footer")
+  footer.style.position = "relative"
+  getNasaData(selectedMonth, selectedDay);
+};
 
 $(".dropdown-trigger").dropdown({ hover: false });
 
