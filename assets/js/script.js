@@ -52,13 +52,18 @@ var saveDate = function(event) {
   if (!dateString) {
     return
   }
-  generateSavedDateBtn(dateString)
   var savedDates = localStorage.getItem("SavedDates")
   if (!savedDates) {
+    generateSavedDateBtn(dateString)
     localStorage.setItem("SavedDates", JSON.stringify([dateString]))
     return
   }
   savedDates = JSON.parse(savedDates)
+  for (var i = 0; i < savedDates.length; i++) {
+    if (dateString == savedDates[i])
+    return
+  }
+  generateSavedDateBtn(dateString)
   savedDates.push(dateString)
   localStorage.setItem("SavedDates", JSON.stringify(savedDates))
 }
