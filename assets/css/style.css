@@ -30,6 +30,10 @@ nav .brand-logo, .dropdown-trigger, .right {
   color: white;
 }
 
+nav .brand-logo {
+  left: 5%;
+}
+
 button {
   font-family: 'Bungee', cursive;
 }
@@ -143,9 +147,5 @@ nav {
   background: black;
 }
 
-@media (max-width: 930px){
-  nav .brand-logo {
-    left: 20%;
-}
-} 
+
   
