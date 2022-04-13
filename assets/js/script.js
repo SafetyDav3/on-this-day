@@ -50,6 +50,10 @@ var loadDates = function () {
   }
 };
 
+var animateSavedDates = function() {
+  $("#drop-btn").effect("shake")
+};
+
 //function to save date as a button in dropdown and in local storage
 var saveDate = function (event) {
   var dateString = dateEl.value;
@@ -60,13 +64,17 @@ var saveDate = function (event) {
   if (!savedDates) {
     generateSavedDateBtn(dateString);
     localStorage.setItem("SavedDates", JSON.stringify([dateString]));
+    animateSavedDates();
     return;
   }
   savedDates = JSON.parse(savedDates);
   for (var i = 0; i < savedDates.length; i++) {
-    if (dateString == savedDates[i]) return;
+    if (dateString == savedDates[i]) {
+        return;
+      }
   }
   generateSavedDateBtn(dateString);
+  animateSavedDates();
   savedDates.push(dateString);
   localStorage.setItem("SavedDates", JSON.stringify(savedDates));
 };
