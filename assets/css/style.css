@@ -5,7 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-body {
+ body {
   background-color: #444;
   font-family: "Bungee", cursive;
 }
@@ -22,10 +22,14 @@ header nav,
   padding: 10px;
 }
 
-nav .brand-logo,
-.dropdown-trigger,
-.right {
+.white {
+  justify-content: baseline;
+  background-image: linear-gradient(to bottom right, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
+}
+
+nav .brand-logo, .dropdown-trigger, .right {
   color: white;
+  background-image: linear-gradient(to bottom right, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
 }
 
 button {
@@ -91,6 +95,7 @@ ul li button {
   margin: auto;
 }
 
+
 .icon-block {
   padding: 0 15px;
 }
@@ -138,3 +143,5 @@ nav {
   width: 100vw;
   background: black;
 }
+
+
