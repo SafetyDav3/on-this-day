@@ -130,6 +130,7 @@ ul li button {
   border: 3px outset #26a69a ;
   box-shadow: 3px 0px 8px 4px black;
   margin: auto;
+  min-width: 60vw;
 }
 
 .nasaPic p {
@@ -146,7 +147,7 @@ ul li button {
 
 footer.page-footer {
   padding-bottom: 10px;
-  margin-top: 40px;
+  margin-top: auto;
   width: 100vw;
   background-image: linear-gradient(
     to bottom left,
@@ -165,8 +166,6 @@ footer.page-footer {
     #198277,
     #26a69a
   );
-  position: absolute;
-  bottom: 0;
 }
 
 footer h2 {
