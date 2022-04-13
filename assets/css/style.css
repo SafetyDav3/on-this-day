@@ -127,6 +127,8 @@ footer.page-footer {
   margin-top: 40px;
   width: 100vw;
   background-image: linear-gradient(to bottom left, #000908, #042522, #06453e, #0e5b54, #0f756b, #198277, #26A69A, #022420, #052d29, #06453e, #0e5b54, #0f756b, #198277, #26A69A);
+  position: absolute;
+  bottom: 0;
 }
 
 .exit {
