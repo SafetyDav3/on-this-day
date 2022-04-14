@@ -135,6 +135,12 @@ ul li button {
   min-width: 60vw;
 }
 
+.nasaPic a {
+  color:wheat;
+  text-shadow: 5px 6px 4px black;
+  font-size: 2.2rem
+}
+
 .nasaPic p {
   font-size: 1.2rem;
   text-align: center;
