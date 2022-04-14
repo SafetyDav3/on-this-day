@@ -132,12 +132,13 @@ ul li button {
 
 .nasaPic img {
   border: 3px outset #26a69a ;
-  box-shadow: 3px 0px 8px 4px black;
+  box-shadow: 3px 0px 8px 4px rgba(0, 0, 0, 0.5);
   margin: auto;
   min-width: 60vw;
 }
 
 .nasaPic p {
+  font-size: 1.2rem;
   text-align: center;
   max-width: 68vw;
   text-shadow: 5px 6px 4px black;
@@ -224,6 +225,7 @@ nav {
 
 
 .icon-block p {
+  font-size: 1.2rem;
   color: white ;
   text-shadow: 5px 6px 4px black;
 
