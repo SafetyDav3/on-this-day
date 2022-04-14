@@ -289,3 +289,9 @@ footer button:hover {
   color: black !important;
 }
 /* ↑↑↑ Hover effect for page buttons end ↑↑↑ */
+
+@media (max-width: 768px) {
+  .datepicker-date-display {
+    display: none;
+  }
+}
