@@ -20,8 +20,6 @@ body img {
   max-height: 90%;
 }
 
-
-
 #drop-btn {
   background-color: transparent !important;
 }
@@ -49,29 +47,29 @@ header nav,
     #0f756b,
     #198277,
     #26a69a
-    );
-  }
-  
-  nav .brand-logo,
-  .dropdown-trigger,
-  .right {
-    color: white;
-  }
-  
-  nav .brand-logo {
-    left: 5%;
-  }
-  
-  button {
-    font-family: "Bungee", cursive;
-    margin-top: 0.6rem;
-  }
-  
-  h1 {
-    text-shadow: 5px 5px 0px #17756b;
-  }
-  
-  .material-icons {
+  );
+}
+
+nav .brand-logo,
+.dropdown-trigger,
+.right {
+  color: white;
+}
+
+nav .brand-logo {
+  left: 5%;
+}
+
+button {
+  font-family: "Bungee", cursive;
+  margin-top: 0.6rem;
+}
+
+h1 {
+  text-shadow: 5px 5px 0px #17756b;
+}
+
+.material-icons {
   color: #17756b;
 }
 
@@ -131,16 +129,16 @@ ul li button {
 }
 
 .nasaPic img {
-  border: 3px outset #26a69a ;
+  border: 3px outset #26a69a;
   box-shadow: 3px 0px 8px 4px rgba(0, 0, 0, 0.5);
   margin: auto;
   min-width: 60vw;
 }
 
 .nasaPic a {
-  color:wheat;
+  color: wheat;
   text-shadow: 5px 6px 4px black;
-  font-size: 2.2rem
+  font-size: 2.2rem;
 }
 
 .nasaPic p {
@@ -179,22 +177,22 @@ ul li button {
     #0f756b,
     #198277,
     #26a69a
-    );
-  }
-  
-  footer h2 {
-    color: white !important;
-    text-shadow: 5px 6px 4px black;
-  }
-  
-  .exit {
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(199, 198, 198);
-    text-align: center;
-  }
-  
-  #myBtn {
+  );
+}
+
+footer h2 {
+  color: white !important;
+  text-shadow: 5px 6px 4px black;
+}
+
+.exit {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(199, 198, 198);
+  text-align: center;
+}
+
+#myBtn {
   display: none;
   position: fixed;
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -229,12 +227,10 @@ nav {
   left: 6px;
 }
 
-
 .icon-block p {
   font-size: 1.2rem;
-  color: white ;
+  color: white;
   text-shadow: 5px 6px 4px black;
-  
 }
 .icon-block h5 {
   color: white;
@@ -251,7 +247,7 @@ nav {
 .material-icons {
   font-size: 2em !important;
   filter: drop-shadow(2px 4px 2px black);
-  
+
   color: #19d3c0;
 }
 
@@ -259,7 +255,7 @@ nav {
   .brand-logo {
     display: none !important;
   }
-  
+
   .dropdown-trigger {
     width: 100%;
   }
