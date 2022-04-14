@@ -23,6 +23,11 @@ var getSavedDateData = function(event) {
   getNasaData(selectedMonth, selectedDay)
 }
 
+var clearSavedDates = function() {
+  localStorage.clear()
+  savedDatesList.innerHTML = ""
+}
+
 //function to generate button for saved dates
 var generateSavedDateBtn = function(dateString) {
   var newListItem = document.createElement("li")
@@ -35,6 +40,18 @@ var generateSavedDateBtn = function(dateString) {
   savedDatesList.prepend(newListItem)
 }
 
+//generates button to clear save date history
+var generateClearHistoryBtn = function() {
+  var newListItem = document.createElement("li")
+  var clearHistoryBtn = document.createElement("button")
+  clearHistoryBtn.setAttribute("type", "button")
+  clearHistoryBtn.setAttribute("class", "btn-large waves-effect waves-light teal")
+  clearHistoryBtn.innerText = "Clear"
+  clearHistoryBtn.addEventListener("click", clearSavedDates)
+  newListItem.appendChild(clearHistoryBtn)
+  savedDatesList.appendChild(newListItem)
+}
+
 //function to load saved dates on page load
 var loadDates = function() {
   var loadedDates = localStorage.getItem("SavedDates")
@@ -45,6 +62,7 @@ var loadDates = function() {
   for (var i = 0; i < loadedDates.length; i++) {
       generateSavedDateBtn(loadedDates[i])
   }
+  generateClearHistoryBtn();
 }
 
 var animateSavedDates = function() {
@@ -62,6 +80,7 @@ var saveDate = function(event) {
     generateSavedDateBtn(dateString);
     localStorage.setItem("SavedDates", JSON.stringify([dateString]));
     animateSavedDates();
+    generateClearHistoryBtn();
     return;
   }
   savedDates = JSON.parse(savedDates)
