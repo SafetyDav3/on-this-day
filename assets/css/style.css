@@ -153,7 +153,7 @@ ul li button {
 
 footer.page-footer {
   padding-bottom: 10px;
-  margin-top: auto;
+  margin-top: 13rem;
   width: 100vw;
   background-image: linear-gradient(
     to bottom left,
@@ -236,7 +236,7 @@ nav {
 }
 .container h5 {
   text-shadow: 5px 6px 6px black;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .material-icons {
