@@ -115,7 +115,7 @@ var displayNasaData = function(nasaData) {
   var newNasaEl = document.createElement('div')
   newNasaEl.setAttribute('class', 'nasaPic')
   var nasaUrl = nasaData.url.substr(8, 13)
-  if (nasaUrl == "apod.nasa.gov") {
+  if (nasaUrl == "apod.nasa.gov" && nasaData.media_type == "image") {
     var nasaImage = document.createElement('img')
     nasaImage.setAttribute("src", nasaData.url)
     newNasaEl.appendChild(nasaImage)
