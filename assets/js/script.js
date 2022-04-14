@@ -32,7 +32,7 @@ var generateSavedDateBtn = function(dateString) {
   newDateBtn.innerText = dateString
   newDateBtn.addEventListener("click", getSavedDateData)
   newListItem.appendChild(newDateBtn)
-  savedDatesList.appendChild(newListItem)
+  savedDatesList.prepend(newListItem)
 }
 
 //function to load saved dates on page load
