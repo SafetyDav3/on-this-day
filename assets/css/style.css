@@ -119,7 +119,7 @@ tbody {
 .datepicker-date-display {
   background-image: url(../images/zoltar.jpg);
   background-size: contain;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .datepicker-date-display span {
