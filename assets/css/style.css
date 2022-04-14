@@ -130,6 +130,10 @@ ul li button {
   width: 100%;
 }
 
+.dropdown-content li:hover {
+  background-color: transparent;
+}
+
 .nasaPic {
   display: flex;
   flex-direction: column;
