@@ -190,7 +190,7 @@ var dateSubmitHandler = function(event) {
   getNasaData(selectedMonth, selectedDay);
 };
 
-$(".dropdown-trigger").dropdown({ hover: false });
+$(".dropdown-trigger").dropdown({ hover: false, coverTrigger: false });
 
 //event listeners for getting date info and saving date info
 dateForm.addEventListener('submit', dateSubmitHandler)
