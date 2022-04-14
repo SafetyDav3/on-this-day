@@ -91,8 +91,8 @@ p {
   width: 100%;
 }
 
-.year-text {
-  display: none !important;
+.select-month input {
+  width: 100%;
 }
 
 .select-wrapper.select-year {
