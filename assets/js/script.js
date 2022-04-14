@@ -28,7 +28,7 @@ var generateSavedDateBtn = function(dateString) {
   var newListItem = document.createElement("li")
   var newDateBtn = document.createElement("button")
   newDateBtn.setAttribute("type", "button")
-  newDateBtn.setAttribute("class", "btn-large waves-effect waves-light teal lighten-1")
+  newDateBtn.setAttribute("class", "btn-large waves-effect waves-light teal")
   newDateBtn.innerText = dateString
   newDateBtn.addEventListener("click", getSavedDateData)
   newListItem.appendChild(newDateBtn)
