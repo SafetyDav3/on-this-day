@@ -20,6 +20,8 @@ body img {
   max-height: 90%;
 }
 
+
+
 #drop-btn {
   background-color: transparent !important;
 }
@@ -47,29 +49,29 @@ header nav,
     #0f756b,
     #198277,
     #26a69a
-  );
-}
-
-nav .brand-logo,
-.dropdown-trigger,
-.right {
-  color: white;
-}
-
-nav .brand-logo {
-  left: 5%;
-}
-
-button {
-  font-family: "Bungee", cursive;
-  margin-top: 0.6rem;
-}
-
-h1 {
-  text-shadow: 5px 5px 0px #17756b;
-}
-
-.material-icons {
+    );
+  }
+  
+  nav .brand-logo,
+  .dropdown-trigger,
+  .right {
+    color: white;
+  }
+  
+  nav .brand-logo {
+    left: 5%;
+  }
+  
+  button {
+    font-family: "Bungee", cursive;
+    margin-top: 0.6rem;
+  }
+  
+  h1 {
+    text-shadow: 5px 5px 0px #17756b;
+  }
+  
+  .material-icons {
   color: #17756b;
 }
 
@@ -114,16 +116,6 @@ tbody {
   font-weight: bold;
   font-size: 2rem;
   color: white;
-}
-
-.datepicker-date-display {
-  background-image: url(../images/zoltar.jpg);
-  background-size: contain;
-  background-size: cover; 
-}
-
-.datepicker-date-display span {
-  display: none !important;
 }
 
 ul li button {
@@ -187,22 +179,22 @@ ul li button {
     #0f756b,
     #198277,
     #26a69a
-  );
-}
-
-footer h2 {
-  color: white !important;
-  text-shadow: 5px 6px 4px black;
-}
-
-.exit {
-  font-size: 15px;
-  font-weight: bold;
-  color: rgb(199, 198, 198);
-  text-align: center;
-}
-
-#myBtn {
+    );
+  }
+  
+  footer h2 {
+    color: white !important;
+    text-shadow: 5px 6px 4px black;
+  }
+  
+  .exit {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(199, 198, 198);
+    text-align: center;
+  }
+  
+  #myBtn {
   display: none;
   position: fixed;
   bottom: 20px; /* Place the button at the bottom of the page */
@@ -242,7 +234,7 @@ nav {
   font-size: 1.2rem;
   color: white ;
   text-shadow: 5px 6px 4px black;
-
+  
 }
 .icon-block h5 {
   color: white;
@@ -259,7 +251,7 @@ nav {
 .material-icons {
   font-size: 2em !important;
   filter: drop-shadow(2px 4px 2px black);
-
+  
   color: #19d3c0;
 }
 
@@ -267,7 +259,7 @@ nav {
   .brand-logo {
     display: none !important;
   }
-
+  
   .dropdown-trigger {
     width: 100%;
   }
