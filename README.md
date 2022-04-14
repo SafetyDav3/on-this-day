@@ -13,6 +13,6 @@
 
 * Materialize - https://materializecss.com/
 
-* MuffinLabs - https://github.com/muffinista/really-simple-history-api
+* ZenQuotes.io - https://zenquotes.io/
 
 * NASA APOD - https://github.com/nasa/apod-api

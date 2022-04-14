@@ -105,7 +105,7 @@ var displayNasaData = function(nasaData) {
     var nasaLink = document.createElement('a')
     nasaLink.setAttribute("href", nasaData.url)
     nasaLink.setAttribute("target", "_blank")
-    nasaLink.innerText = "NASA Link"
+    nasaLink.innerText = "Click Me!"
     newNasaEl.appendChild(nasaLink)
   }
   var nasaDesc = document.createElement('p')
