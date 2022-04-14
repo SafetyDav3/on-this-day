@@ -276,3 +276,9 @@ nav {
     width: 100%;
   }
 }
+
+
+button:hover {
+  background-color: white !important;
+  color: black;
+}
