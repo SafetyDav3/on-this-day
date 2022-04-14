@@ -116,6 +116,16 @@ tbody {
   color: white;
 }
 
+.datepicker-date-display {
+  background-image: url(../images/zoltar.jpg);
+  background-size: contain;
+  background-size: cover;
+}
+
+.datepicker-date-display span {
+  display: none !important;
+}
+
 ul li button {
   width: 100%;
 }
