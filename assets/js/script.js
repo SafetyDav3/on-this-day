@@ -18,6 +18,7 @@ $("#date-picker").datepicker({
 //click handler for saved date
 var getSavedDateData = function(event) {
   var dateString = event.target.innerText
+  dateEl.value = dateString
   var selectedMonth = dateString.substr(0, 2)
   var selectedDay = dateString.substr(3, 2)
   getNasaData(selectedMonth, selectedDay)
