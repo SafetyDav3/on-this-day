@@ -275,7 +275,17 @@ nav {
   }
 }
 
-button:hover {
+/* ↓↓↓ Hover effects for page buttons ↓↓↓ */
+.nav-wrapper ul li button:hover {
   background-color: white !important;
   color: black !important;
 }
+.btn-large:hover {
+  background-color: white !important;
+  color: black !important;
+}
+footer button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+/* ↑↑↑ Hover effect for page buttons end ↑↑↑ */
