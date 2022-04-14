@@ -6,7 +6,6 @@
  * Made By MaterializeCSS.com
  */
 body {
-  background-color: #444;
   font-family: "Bungee", cursive;
   min-height: 100vh;
   background-image: url(../images/stars3.webp) !important;
@@ -27,7 +26,6 @@ body img {
 
 header nav,
 .dropdown-content {
-  background-color: black;
   padding: 10px;
 }
 
@@ -153,7 +151,7 @@ ul li button {
   font-size: inherit;
 }
 
-footer.page-footer {
+.page-footer {
   padding-bottom: 10px;
   margin-top: 13rem;
   width: 100vw;
