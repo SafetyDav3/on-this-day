@@ -64,7 +64,7 @@ nav .brand-logo {
 
 button {
   font-family: "Bungee", cursive;
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
 }
 
 h1 {
@@ -141,6 +141,7 @@ ul li button {
   text-align: center;
   max-width: 68vw;
   text-shadow: 5px 6px 4px black;
+  padding-top: 2rem;
 }
 
 .icon-block {
@@ -246,3 +247,12 @@ nav {
   color: #19d3c0;
 }
 
+@media (max-width: 500px) {
+  .brand-logo {
+    display: none !important;
+  }
+
+  .dropdown-trigger {
+    width: 100%;
+  }
+}
