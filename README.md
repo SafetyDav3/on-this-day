@@ -1,8 +1,11 @@
 # On This Day
 
+Have you ever wondered what types of things have happened on specific day like your birthday? With “On This Day” its possible.
+
 Pick any date and get the notable events related to it. Including "NASA Pic of the Day" and fact of the day using the NASA APOD api. From ZenQuotes api the site will provide notable Historical events, Famous Birthdays and Deaths. This site is using Materialize as its CSS framework and jQuery as a Javascript library for certain use cases.
 
 ## [Deployed Site](https://safteydav3.github.io/on-this-day/)
+
 ## Presentation
 
 - https://docs.google.com/presentation/d/11LH6tP3COsxIbveylczIE0T8EERcKxdK5jfae0sYDYo/edit?usp=sharing
