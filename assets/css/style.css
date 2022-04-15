@@ -8,10 +8,10 @@
 body {
   font-family: "Bungee", cursive;
   min-height: 100vh;
-  background-image: url(../images/stars3.webp) !important;
   background-position: center;
   background-repeat: none;
   background-size: cover;
+  background-image: url(../images/stars3.webp) !important;
 }
 
 body img {
